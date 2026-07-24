@@ -25,6 +25,16 @@ set_multicycle_path). Not implemented: clock groups, generated clocks,
 case analysis, derate, most other SDC commands (SDC has 100+). 14 tests
 / 69 assertions, 0 failures.
 
+## Kotoba bounded profile
+
+`src/sdc/bounded_duty_cycle.kotoba` is a capability-free port of
+`sdc.clock/duty-cycle` (the create_clock waveform duty-cycle
+computation, including the inverted-waveform wraparound case).
+`sdc.create-clock`/`sdc.io-delay`/`sdc.path-exception`/`sdc.parser` stay
+CLJC (open-ended pin identifiers/sets, or regex-driven parsing). See
+[migration/bounded-duty-cycle-v1.edn](migration/bounded-duty-cycle-v1.edn)
+for the full record.
+
 ## Develop
 
 ```bash
