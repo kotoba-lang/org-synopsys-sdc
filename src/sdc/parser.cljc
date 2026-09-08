@@ -4,7 +4,7 @@
   set_output_delay, set_false_path, set_multicycle_path. Part of the
   kotoba-lang org-<vendor>-<spec> reverse-domain naming initiative
   (ADR-2607072500, com-junkawasaki/root)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [sdc.clock :as clock]
             [sdc.io-delay :as io-delay]
             [sdc.path-exception :as path-exception]))
