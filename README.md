@@ -38,5 +38,5 @@ for the full record.
 ## Develop
 
 ```bash
-clojure -M:test
+kbb -M:test
 ```
