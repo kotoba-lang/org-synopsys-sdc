@@ -1,6 +1,6 @@
 {:schema "kotoba-org-synopsys-sdc-migration/v1"
  :profile :sdc/bounded-duty-cycle-v1
- :legacy {:source "src/sdc/clock.cljc"
+ :legacy {:source "src/sdc/clock.cljk"
           :status :retained-general-oracle}
  :canonical {:engine-and-conformance "src/sdc/bounded_duty_cycle.kotoba"}
  :domain
